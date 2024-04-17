@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Profile</title>
+<title> Profile</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -75,10 +75,10 @@
 
                 <div class="row mb-0 pb-4">
                     <div class="col-6">
-                        <a href="#" data-toast="Error" class="btn btn-m btn-full rounded-s bg-highlight font-13 font-600"><i class="fa-solid fa-plus"></i> Add to story</a>
+                        <a href="#" data-toast="ErrorX" class="btn btn-m btn-full rounded-s bg-highlight font-13 font-600"><i class="fa-solid fa-plus"></i> Add to story</a>
                     </div>
                     <div class="col-6">
-                        <a href="#" data-toast="Error" class="btn btn-m btn-full rounded-s border-highlight color-highlight font-13 font-600"><i class="fa-solid fa-pen"></i> Edit Profile</a>
+                        <a href="#" data-toast="ErrorX" class="btn btn-m btn-full rounded-s border-highlight color-highlight font-13 font-600"><i class="fa-solid fa-pen"></i> Edit Profile</a>
                     </div>
                 </div>
                 
@@ -119,11 +119,17 @@
             </div>
         </div>
 
-
+        <script>
+            function myFunction() {
+              var x = document.getElementById("ErrorX");
+              x.className = "show";
+              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+            </script>
        
     </div>
     <!-- Page content ends here-->
-    <div id="Error" class="snackbar-toast color-white mb-4 bg-red-dark" data-bs-delay="3000" data-bs-autohide="true"><i class="bi bi-lock-fill"></i>Login First</div>
+    <div id="ErrorX" class="snackbar-toast color-white mb-4 bg-red-dark" data-bs-delay="3000" data-bs-autohide="true"><i class="bi bi-lock-fill"></i>Login First</div>
     <div id="menu-main-modal" class="menu menu-box-modal rounded-0 rounded-m" data-menu-load="menu-main.html" data-menu-width="350"  data-menu-height="500" data-menu-active="nav-pages"></div>
 
 
