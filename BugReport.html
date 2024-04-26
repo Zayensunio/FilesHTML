@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>Qustion & Answer</title>
+<title>bug Report</title>
 <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -39,8 +39,16 @@
 
 
 <br>
-<iframe data-tally-src="https://tally.so/embed/wvNNq4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="100" frameborder="0" marginheight="0" marginwidth="0" title="Bug Report"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-<script async src="https://tally.so/widgets/embed.js"></script>
+
+    <iframe id="embeddedFrame" width="800" height="600" frameborder="0"></iframe>
+
+    <script>
+        // JavaScript to set the src attribute of the iframe
+        window.onload = function() {
+            var iframe = document.getElementById('embeddedFrame');
+            iframe.src = 'https://tally.so/embed/wvNNq4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1'; // Replace this URL with the URL of the page you want to embed
+        };
+    </script>
 
 
 
