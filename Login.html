@@ -22,12 +22,12 @@
 <!-- Option 1: Include in HTML -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <div class="header header-demo header-logo-center bg-red-dark mb-100 shadow-l">
-        <a href="index.html" class="header-title color-white">Play Boy</a>
+        <a href="Login.html" class="header-title color-white">Play Boy</a>
     </div>
 
 
     <div id="footer-bar" class="footer-bar-6">
-        <a href="Contact.html" class="circle-nav"><i class="fa fa-phone"></i><span>Contact Us</span></a>
+        <a href="#" class="circle-nav"><i class="fa fa-phone"></i><span" onclick="openTelegramApp()">Contact Us</span></a>
     </div>
 
 
@@ -130,7 +130,12 @@
 
 
 </div>
-
+<script>
+    function openTelegramApp() {
+        var appLink = "tg://resolve?domain=iNDiTeam";
+        window.location.href = appLink;
+    }
+</script>
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 </body>
