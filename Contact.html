@@ -87,10 +87,17 @@
 <img src="images/SupportTeam/25.png" alt="Avatar" class="avatar">
 <img src="images/SupportTeam/26.png" alt="Avatar" class="avatar">
 <img src="images/SupportTeam/29.png" alt="Avatar" class="avatar">
-<img src="images/SupportTeam/30.png" alt="Avatar" class="avatar">
-<button class="button button3" onclick="openChatFullscreen()">Hi,Open Chat</button>
+<img src="images/SupportTeam/30.png" alt="Avatar" class="avatar"><br><br>
+<button class="button button3" onclick="openNewPage()">Open New Page</button><br><br>
                 </div>
-              
+
+<script>
+    function openNewPage() {
+        // Change the URL to the desired webpage
+        var url = "https://tawk.to/chat/663dedc19a809f19fb2f7980/1htguhfpp";
+        window.open(url, "_blank"); // Opens the URL in a new tab
+    }
+</script>
                 <style>
 .axxx {
   text-align: center;
@@ -193,30 +200,7 @@ stroke-dashoffset: 900;
 }
 }
 </style>
-<script>
-  function openChatFullscreen() {
-    // Check if the tawk.to widget is loaded
-    if (typeof Tawk_API !== 'undefined') {
-      // Open the tawk.to widget in fullscreen mode
-      Tawk_API.maximize();
-    } else {
-      // If the widget is not loaded, you can handle the error or load the widget asynchronously
-      console.error('tawk.to widget is not loaded.');
-    }
-  }
-  </script>
-   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/663dedc19a809f19fb2f7980/1htguhfpp';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!-- Style for the button -->
+
     <style>
     .button {
       background-color: #4CAF50;
