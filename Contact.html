@@ -21,6 +21,8 @@
 </head>
     
 <body class="theme-light">
+  <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+
   <div id="page">
     
     <div class="header header-fixed header-logo-center header-logo-center">
@@ -110,27 +112,36 @@
   
 <br><br>
 
-
-
-<!-- Tidio Chat Script -->
-<script src="//code.tidio.co/gcbbtvm5w1jya3lpcgfgzrhm2fk6ldbg.js" async></script>
-
-<!-- JavaScript -->
-<script>
-    // Function to open the Tidio chat
-    function openTidioChat() {
-        if (typeof tidioChatApi !== 'undefined') {
-            tidioChatApi.open();
-        } else {
-            console.error('Tidio chat API is not available.');
-        }
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/663dedc19a809f19fb2f7980/1htguhfpp';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  
+  
+  <!-- Button to open tawk.to chat in fullscreen -->
+  <button onclick="openChatFullscreen()">Open Chat</button>
+  
+  <script>
+  function openChatFullscreen() {
+    // Check if the tawk.to widget is loaded
+    if (typeof Tawk_API !== 'undefined') {
+      // Open the tawk.to widget in fullscreen mode
+      Tawk_API.maximize();
+    } else {
+      // If the widget is not loaded, you can handle the error or load the widget asynchronously
+      console.error('tawk.to widget is not loaded.');
     }
-
-    // Add click event listener to the custom button
-    document.getElementById('custom-chat-button').addEventListener('click', openTidioChat);
-</script>
-
-<button id="custom-chat-button" style="background: none; border: none; color: blue; text-decoration: underline; cursor: pointer;">Open Chat</button>
+  }
+  </script>
+  
+  
                 </div>
 
 
