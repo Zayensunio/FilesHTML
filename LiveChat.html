@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chat</title>
+    <style>
+        /* Make the chat iframe take up the entire screen */
+        iframe {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: none; /* Hide iframe initially */
+        }
+        /* Loading spinner styles */
+        .loader {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 8px solid #14ff6a00; /* Light grey */
+            border-top: 8px solid #ff2626f0; /* Blue */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            z-index: 9999; /* Ensure it's on top */
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading spinner -->
+    <div class="loader" id="loader"></div>
+    <!-- Replace '663dedc19a809f19fb2f7980' with your own tawk.to account ID -->
+    <iframe src="https://tawk.to/chat/663dedc19a809f19fb2f7980/1htguhfpp" allow="fullscreen" id="chatFrame"></iframe>
+
+    <script>
+        // Show the iframe and hide the loader when iframe content is loaded
+        document.getElementById('chatFrame').onload = function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('chatFrame').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
