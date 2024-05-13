@@ -112,9 +112,25 @@
 
 
 
+<!-- Tidio Chat Script -->
 <script src="//code.tidio.co/gcbbtvm5w1jya3lpcgfgzrhm2fk6ldbg.js" async></script>
-              <a class="button button3" href="javascript:" onclick="tidioChatApi.display(true);tidioChatApi.open()"><img
-                alt="zzzzz" src="images/SupportTeam/Chat.gif" width="25" height="25"/> Live Chat With Us</a><br><br>
+
+<!-- JavaScript -->
+<script>
+    // Function to open the Tidio chat
+    function openTidioChat() {
+        if (typeof tidioChatApi !== 'undefined') {
+            tidioChatApi.open();
+        } else {
+            console.error('Tidio chat API is not available.');
+        }
+    }
+
+    // Add click event listener to the custom button
+    document.getElementById('custom-chat-button').addEventListener('click', openTidioChat);
+</script>
+
+<button id="custom-chat-button" style="background: none; border: none; color: blue; text-decoration: underline; cursor: pointer;">Open Chat</button>
                 </div>
 
 
@@ -224,5 +240,6 @@ stroke-dashoffset: 900;
                 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
 
 </body>
