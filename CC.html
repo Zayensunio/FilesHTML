@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chat Button</title>
+</head>
+<body>
+    <!-- Custom Chat Button -->
+    <button id="custom-chat-button">Open Chat</button>
+
+    <!-- Tidio Chat Script -->
+    <script src="//code.tidio.co/gcbbtvm5w1jya3lpcgfgzrhm2fk6ldbg.js" async></script>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to open the Tidio chat
+        function openTidioChat() {
+            if (typeof tidioChatApi !== 'undefined') {
+                tidioChatApi.open();
+            } else {
+                console.error('Tidio chat API is not available.');
+            }
+        }
+
+        // Add click event listener to the custom button
+        document.getElementById('custom-chat-button').addEventListener('click', openTidioChat);
+    </script>
+</body>
+</html>
