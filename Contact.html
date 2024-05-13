@@ -38,32 +38,26 @@
 <div class="page-content">
 
   <script>
-    
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/663dedc19a809f19fb2f7980/1htguhfpp';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-    })();
-      </script>
-
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/663dedc19a809f19fb2f7980/1htguhfpp';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
+(function() {
+   function onTidioChatApiReady() {
+   window.tidioChatApi.hide();
+   window.tidioChatApi.on("close", function() {
+   window.tidioChatApi.hide();
+   });
+   }
+  
+   if (window.tidioChatApi) {
+   window.tidioChatApi.on("ready", onTidioChatApiReady);
+   } else {
+   document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+   }
+  
+   document.querySelector(".chat-button").addEventListener("click", function() {
+   window.tidioChatApi.show();
+   window.tidioChatApi.open();
+   });
   })();
-  </script>
-  <!--End of Tawk.to Script-->
-
+      </script>
 
      <div class="card card-style">
             <div class="axxx">
@@ -117,44 +111,13 @@
 <br><br>
 
 
-              <a class="button button3" href="#" onclick="javascript:void(Tawk_API.toggle())" ><img
+
+<script src="//code.tidio.co/gcbbtvm5w1jya3lpcgfgzrhm2fk6ldbg.js" async></script>
+              <a class="button button3" href="javascript:;" onclick="tidioChatApi.display(true);tidioChatApi.open()"><img
                 alt="zzzzz" src="images/SupportTeam/Chat.gif" width="25" height="25"/> Live Chat With Us</a><br><br>
                 </div>
 
-                <script type="text/javascript">
 
-                  Tawk_API = Tawk_API || {};
-                  
-                  Tawk_API.onStatusChange = function (status){
-                  
-                  if(status === 'online')
-                  
-                  {
-                  
-                  document.getElementById('status').innerHTML = '<a href="javascript:void(Tawk_API.toggle())">Online - Click to chat</a>';
-                  
-                  }
-                  
-                  else if(status === 'away')
-                  
-                  {
-                  
-                  document.getElementById('status').innerHTML = 'We are currently away';
-                  
-                  }
-                  
-                  else if(status === 'offline')
-                  
-                  {
-                  
-                  document.getElementById('status').innerHTML = 'Live chat is Offline';
-                  
-                  }
-                  
-                  };
-                  
-                  </script>
-                  
               
                 <style>
 .axxx {
