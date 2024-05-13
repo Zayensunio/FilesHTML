@@ -104,7 +104,40 @@
                 alt="zzzzz" src="images/SupportTeam/Chat.gif" width="25" height="25"/> Live Chat With Us</a><br><br>
                 </div>
 
+                <script type="text/javascript">
 
+                  Tawk_API = Tawk_API || {};
+                  
+                  Tawk_API.onStatusChange = function (status){
+                  
+                  if(status === 'online')
+                  
+                  {
+                  
+                  document.getElementById('status').innerHTML = '<a href="javascript:void(Tawk_API.toggle())">Online - Click to chat</a>';
+                  
+                  }
+                  
+                  else if(status === 'away')
+                  
+                  {
+                  
+                  document.getElementById('status').innerHTML = 'We are currently away';
+                  
+                  }
+                  
+                  else if(status === 'offline')
+                  
+                  {
+                  
+                  document.getElementById('status').innerHTML = 'Live chat is Offline';
+                  
+                  }
+                  
+                  };
+                  
+                  </script>
+                  
               
                 <style>
 .axxx {
