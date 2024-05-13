@@ -115,44 +115,9 @@
   </style>
   
 <br><br>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-
-<script>
-document.getElementById("popupButton").addEventListener("click", function() {
-  // Set the initial countdown value in seconds
-  let countdown = 10;
-  
-  // Show SweetAlert popup
-  swal({
-    title: "Popupd Timer",
-    text: "This is a popup with a countdown timer:",
-    content: {
-      element: "p",
-      attributes: {
-        id: "timer"
-      }
-    },
-    buttons: false, // Hide the "OK" button
-    closeOnClickOutside: false, // Prevent closing on outside click
-    closeOnEsc: false // Prevent closing on ESC key press
-  });
-
-  // Update the countdown timer every second
-  const timerInterval = setInterval(() => {
-    countdown--;
-    document.getElementById("timer").textContent = `Time remaining: ${countdown} seconds`;
-
-    // If countdown reaches 0, close the popup
-    if (countdown <= 0) {
-      clearInterval(timerInterval);
-      swal.close();
-    }
-  }, 1000);
-});
-</script>
 
 
-              <a class="button button3" id="popupButton" href="javascript:void(Tawk_API.toggle())"><img
+              <a class="button button3" href="#" onclick="javascript:void(Tawk_API.toggle())" ><img
                 alt="zzzzz" src="images/SupportTeam/Chat.gif" width="25" height="25"/> Live Chat With Us</a><br><br>
                 </div>
 
