@@ -38,28 +38,23 @@
 <div class="page-title-clear"></div>
 
 <div class="page-content">
-
-  <script>
-(function() {
-   function onTidioChatApiReady() {
-   window.tidioChatApi.hide();
-   window.tidioChatApi.on("close", function() {
-   window.tidioChatApi.hide();
-   });
-   }
-  
-   if (window.tidioChatApi) {
-   window.tidioChatApi.on("ready", onTidioChatApiReady);
-   } else {
-   document.addEventListener("tidioChat-ready", onTidioChatApiReady);
-   }
-  
-   document.querySelector(".chat-button").addEventListener("click", function() {
-   window.tidioChatApi.show();
-   window.tidioChatApi.open();
-   });
-  })();
-      </script>
+  <style>
+    .button {
+      background-color: rgb(255, 38, 30); /* Green */
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+    
+    .button3 {padding: 14px 40px;}
+    </style>
+    
 
      <div class="card card-style">
             <div class="axxx">
@@ -93,75 +88,8 @@
 <img src="images/SupportTeam/26.png" alt="Avatar" class="avatar">
 <img src="images/SupportTeam/29.png" alt="Avatar" class="avatar">
 <img src="images/SupportTeam/30.png" alt="Avatar" class="avatar">
-<style>
-  .button {
-    background-color: rgb(255, 38, 30); /* Green */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-  
-  .button3 {padding: 14px 40px;}
-  </style>
-  
-<br><br>
-
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/663dedc19a809f19fb2f7980/1htguhfpp';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!-- Style for the button -->
-  <style>
-  .button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  
-  .button3 {background-color: #f44336;} /* Red */
-  </style>
-
-  
-  <!-- Button to open tawk.to chat in fullscreen -->
-  <button class="button button3" onclick="openChatFullscreen()">Open Chat</button>
-  
-  <script>
-  function openChatFullscreen() {
-    // Check if the tawk.to widget is loaded
-    if (typeof Tawk_API !== 'undefined') {
-      // Open the tawk.to widget in fullscreen mode
-      Tawk_API.maximize();
-    } else {
-      // If the widget is not loaded, you can handle the error or load the widget asynchronously
-      console.error('tawk.to widget is not loaded.');
-    }
-  }
-  </script>
-  
-  
+<button class="button button3" onclick="openChatFullscreen()">Hi,Open Chat</button>
                 </div>
-
-
               
                 <style>
 .axxx {
@@ -265,7 +193,46 @@ stroke-dashoffset: 900;
 }
 }
 </style>
-                
+<script>
+  function openChatFullscreen() {
+    // Check if the tawk.to widget is loaded
+    if (typeof Tawk_API !== 'undefined') {
+      // Open the tawk.to widget in fullscreen mode
+      Tawk_API.maximize();
+    } else {
+      // If the widget is not loaded, you can handle the error or load the widget asynchronously
+      console.error('tawk.to widget is not loaded.');
+    }
+  }
+  </script>
+   <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/663dedc19a809f19fb2f7980/1htguhfpp';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!-- Style for the button -->
+    <style>
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button3 {background-color: #f44336;} /* Red */
+    </style>               
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
